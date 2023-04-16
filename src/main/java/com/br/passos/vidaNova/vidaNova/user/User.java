@@ -30,4 +30,19 @@ public class User {
         this.dependency = data.dependency();
         this.sober = data.sober();
     }
+
+    public void updateData(DataUpdateUser data) {
+        if (data.name() != null) {
+            this.name = data.name();
+        }
+        if (data.email() != null) {
+            this.email = data.email();
+        }
+        if (data.password() != null) {
+            this.password = data.password();
+        }
+        if (data.dependency() != null) {
+            this.dependency = data.dependency();
+        }
+    }
 }

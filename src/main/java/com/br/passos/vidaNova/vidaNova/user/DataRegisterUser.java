@@ -8,7 +8,7 @@ public record DataRegisterUser(
         @Email
         @NotBlank
         String email,
-        @NotBlank
+        @NotNull
         Integer age,
         @NotBlank
         @Size(min = 6, message = "A senha deve ter no mínimo 6 caracteres")
