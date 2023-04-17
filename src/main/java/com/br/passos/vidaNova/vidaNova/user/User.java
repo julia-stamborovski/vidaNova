@@ -31,6 +31,13 @@ public class User {
         this.sober = data.sober();
     }
 
+    public User(Long id) {
+        this.id = id;
+        this.name = name;
+        this.dependency = dependency;
+        this.sober = sober;
+    }
+
     public void updateData(DataUpdateUser data) {
         if (data.name() != null) {
             this.name = data.name();

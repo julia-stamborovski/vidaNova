@@ -14,4 +14,7 @@ public record DataListerUser(
                 user.getDependency(),
                 user.getSober());
     }
+    public static DataListerUser fromUser(User user) {
+        return new DataListerUser(user.getId(), user.getName(), user.getDependency(), user.getSober());
+    }
 }
